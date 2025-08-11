@@ -60,9 +60,9 @@ module.exports = {
       });
 
       const totalCommands = commands.size;
-      msg += `\n\n╭─────⭔[ 𝗘𝗻𝗷𝗼𝘆 🍀 ]\n│> 𝗧𝗼𝘁𝗮𝗹 𝗰𝗺𝗱𝘀: [${totalCommands}].\n│𝗧𝘆𝗽𝗲: [ ${prefix}𝗵𝗲𝗹𝗽 𝘁𝗼 \n│<𝗰𝗺𝗱> 𝘁𝗼 𝗹𝗲𝗮𝗿𝗻 𝘁𝗵𝗲 𝘂𝘀𝗮𝗴𝗲.]\n╰────────────:)`;
+      msg += `\n\n╭─────⭔[ nzr bot ]\n│> 𝗧𝗼𝘁𝗮𝗹 𝗰𝗺𝗱𝘀: [${totalCommands}].\n│𝗧𝘆𝗽𝗲: [ ${prefix}𝗵𝗲𝗹𝗽 𝘁𝗼 \n│<𝗰𝗺𝗱> 𝘁𝗼 𝗹𝗲𝗮𝗿𝗻 𝘁𝗵𝗲 𝘂𝘀𝗮𝗴𝗲.]\n╰────────────:)`;
       msg += ``;
-      msg += `\n╭─────⭔\n│💫 | [princes sophie]\n╰────────────:-)`; // its not decoy so change it if you want 
+      msg += `\n╭─────⭔\n│💫 | [princes student]\n╰────────────:-)`; // its not decoy so change it if you want 
 
 
       await message.reply({
@@ -70,7 +70,7 @@ module.exports = {
       });
     } else {
       const commandName = args[0].toLowerCase();
-      const command = commands.get(commandName) || commands.get(aliases.get(commandName));
+      const command = commands.get(commandName) || commands.get(aliases.ge t(commandName));
 
       if (!command) {
         await message.reply(`Command "${commandName}" not found.`);
