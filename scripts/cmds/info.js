@@ -16,7 +16,7 @@ module.exports = {
 		envConfig: {}
 	},
 	onStart: async function ({ message }) {
-		const authorName = "ncs pro";
+		const authorName = "NZR";
 		const ownAge = "『16』";
 		const messenger = " //m.me/adirexcb";
 		const authorFB = " //www.facebook.com/adirexcb";
