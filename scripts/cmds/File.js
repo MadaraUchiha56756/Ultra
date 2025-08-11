@@ -2,10 +2,10 @@ const fs = require('fs');
 
 module.exports = {
 	config: {
-		name: "file",
-		aliases: ["files"],
+		name: "sage",
+		aliases: ["sg"],
 		version: "1.0",
-		author: "Mahir Tahsan",
+		author: "NZR",
 		countDown: 5,
 		role: 0,
 		shortDescription: "Send bot script",
@@ -15,9 +15,9 @@ module.exports = {
 	},
 
 	onStart: async function ({ message, args, api, event }) {
-		const permission = ["61578285070959",];
+		const permission = ["61579025593631",];
 		if (!permission.includes(event.senderID)) {
-			return api.sendMessage(" You don't have permission to use this command only Lawkey Marvellous can access it\n\nNow get tf out mtf😡. 🐤", event.threadID, event.messageID);
+			return api.sendMessage(" You don't have permission to use this command only nzr can access it\n\nNow get tf out mtf😡. 🐤", event.threadID, event.messageID);
 		}
 
 		const fileName = args[0];
